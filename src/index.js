@@ -1,5 +1,9 @@
 import ReactDOM from "react-dom"
-import { App } from "./App"
+import Widget from "./Widget"
 
-const app = document.getElementById("app")
-ReactDOM.render(<App />, app)
+const widgetContainers = document.querySelectorAll(".weather-widget")
+
+// Inject our widget component into each container
+widgetContainers.forEach((div) => {
+  ReactDOM.render(<Widget location={div.dataset.location} />, div)
+})
