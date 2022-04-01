@@ -14,7 +14,8 @@
   },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.js --no-source-maps"
+    "build": "parcel build src/index.js --no-source-maps",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
