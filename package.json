@@ -2,12 +2,19 @@
   "name": "seed",
   "version": "1.0.0",
   "description": "Seed project for tiny react apps",
-  "main": "dist/index.js",
   "author": "Car Oc",
   "license": "MIT",
+  "app": "dist/index.js",
+  "browserslist": "> 0.25%",
+  "engines": {
+    "browsers": "> 0.25%"
+  },
+  "targets": {
+    "app": {}
+  },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.js"
+    "build": "parcel build src/index.js --no-source-maps"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
