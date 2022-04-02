@@ -7,6 +7,7 @@
   "source": "src/index.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "type": "module",
   "targets": {
     "default": {
       "engines": {
