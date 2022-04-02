@@ -8,3 +8,5 @@ widgetContainers.forEach((div) => {
   // @ts-ignore
   ReactDOM.render(<Widget location={div.dataset.location} />, div)
 })
+
+export { Widget }
