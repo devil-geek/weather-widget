@@ -7,10 +7,14 @@
   "app": "dist/index.js",
   "browserslist": "> 0.25%",
   "engines": {
-    "browsers": "> 0.25%"
+    "node": ">= 12"
   },
   "targets": {
-    "app": {}
+    "default": {
+      "engines": {
+        "browsers": ">= 50%"
+      }
+    }
   },
   "scripts": {
     "dev": "parcel src/index.html",
