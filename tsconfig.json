@@ -3,6 +3,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   }
 }
