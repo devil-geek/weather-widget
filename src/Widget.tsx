@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { MdAir, MdWaterDrop } from "react-icons/md"
 import { globalStyles } from "./styles"
 
-const Widget = ({ location, key, wrapperStyle }) => {
+const Widget = ({ location, apiKey, wrapperStyle }) => {
   const [weather, setWeather] = useState({
     current: {
       precip_mm: -1,
@@ -23,7 +23,7 @@ const Widget = ({ location, key, wrapperStyle }) => {
     axios
       .get("http://api.weatherapi.com/v1/current.json", {
         //@ts-ignore
-        params: { key: process.env.W_KEY || key, q: location },
+        params: { key: process.env.W_KEY || apiKey, q: location },
       })
       .then((res) => {
         setWeather(res.data)
