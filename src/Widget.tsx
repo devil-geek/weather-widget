@@ -4,7 +4,13 @@ import { useEffect, useState } from "react"
 import { MdAir, MdWaterDrop } from "react-icons/md"
 import { globalStyles } from "./styles"
 
-const Widget = ({ location, apiKey, wrapperStyle }) => {
+interface WidgetProps {
+  location: string
+  apiKey?: {}
+  wrapperStyle?: {}
+}
+
+const Widget = ({ location, apiKey, wrapperStyle }: WidgetProps) => {
   const [weather, setWeather] = useState({
     current: {
       precip_mm: -1,
