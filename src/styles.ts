@@ -3,10 +3,6 @@ import { css } from "@emotion/react"
 export const globalStyles = css`
   @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap");
 
-  #weather_wrapper {
-    width: 400px;
-    margin: 100px auto;
-  }
   .weatherCard {
     width: 400px;
     height: 200px;
