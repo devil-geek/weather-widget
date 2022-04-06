@@ -6,7 +6,7 @@
   "license": "MIT",
   "source": "src/index.tsx",
   "main": "dist/main.js",
-  "type": "module",
+  "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "targets": {
     "default": {
